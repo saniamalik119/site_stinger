@@ -1,0 +1,71 @@
+body{
+    height: 3000px;
+    background-color: #272727;
+    font-family: "DM Sand", sans-serif;
+}
+header{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 0 14rem;
+    overflow: hidden;
+}
+.one{
+    color: #fdd702; /* Gold color */
+  text-shadow: 1px 1px 0px #a08e8e, -1px -1px 0px #8f8989, 1px -1px 0px #d1c7c7, -1px 1px 0rgb(190, 181, 181)000; /* Shadow effect */
+  font-weight: bold; /* Optional: Adjust font weight */
+  font-family: "Arial", sans-serif; /* Optional: Adjust font family */
+  font-size: clamp(3rem, 3rem + 4vw, 6rem);
+  
+}
+header h1{
+    font-size: 4.6rem;
+    color: #fff;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.scroll-text{
+    position: fixed;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    z-index: -1;
+    transition: all 0.3s;
+}
+.bg-text{
+    font-size: 20rem;
+    color: rgb(122, 122, 122);
+  -webkit-text-fill-color: #272727; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(100, 92, 92);
+}
+.sec-text{
+    position: fixed;
+    top: 40%;
+    right: 0;
+    white-space: nowrap;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.sec-bg{
+    font-size: 20rem;
+    color: rgb(122, 122, 122);
+  -webkit-text-fill-color: #272727; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(105, 100, 100);
+}
+span{
+    color: #F2F2F2;
+}
+.two{
+    color: #CDBE78;
+}
+@media only screen and (max-width: 480px) {
+    header h1{
+        font-size: 2rem;
+        width: 400px;
+    }
+  }
